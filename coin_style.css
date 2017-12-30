@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html{	
+	font-family: 'Open Sans', sans-serif;
+    color: #1A535C;
+    background-color: #F7FFF7;
+    font-weight: bold;
+}
+
+#myTable {
+    font-family: 'Open Sans', sans-serif;
+    border-collapse: collapse;
+    align-self: right;
+    position:absolute;
+    right: 100px
+}
+#myTable td, th {
+    border: 1px solid #4ECDC4;
+    text-align: left;
+    padding: 8px;
+}
+#myTable tr:nth-child(even) {
+    background-color: #4ECDC4;
+}
+#mainTitle{
+    border-style: solid;
+    font-family: 'Pacifico', sans-serif;
+    font-weight: normal;
+    color: #FF6B6B;
+	font-size: 100px;	
+	padding: 15px;
+	display: inline-block;
+	border:1px;
+}

@@ -1,8 +1,7 @@
 $(function(){
-    $("button").click(function(){
         $.get("https://api.coinmarketcap.com/v1/ticker/", function(data){
             var table = document.getElementById("myTable");
-            for (coinIndex = 0; coinIndex < data.length; coinIndex++){
+            for (coinIndex = 0; coinIndex < 25; coinIndex++){
             var coinJSON = JSON.stringify(data[coinIndex])
             var coinInfo = JSON.parse(coinJSON)
             var row = table.insertRow(table.length);
@@ -15,6 +14,5 @@ $(function(){
             coinPrice.innerHTML = coinInfo.price_usd;
             coinChange.innerHTML = coinInfo.percent_change_24h;
             }
-        })
     })
  });
