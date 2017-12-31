@@ -4,24 +4,47 @@
 html{	
 	font-family: 'Open Sans', sans-serif;
     color: #1A535C;
-    background-color: #F7FFF7;
+    background-color: #8EDFD9;
     font-weight: bold;
 }
-
+.chart {
+    width: 750px;
+    text-align: center
+}
+#piechart {
+    align-self: left;
+}
+#chartTitle {
+    font-family: 'Pacifico', sans-serif;
+    color: #FF6B6B;
+    margin: 0;
+	font-size: 40px;	
+    text-shadow:-1px -1px 0 #F7FFF7,
+                1px -1px 0 #F7FFF7,
+                -1px 1px 0 #F7FFF7,
+                1px 1px 0 #F7FFF7,  
+                -2px 0 0 #F7FFF7,
+                2px 0 0 #F7FFF7,
+                0 2px 0 #F7FFF7,
+                0 -2px 0 #F7FFF7;
+}    
 #myTable {
     font-family: 'Open Sans', sans-serif;
     border-collapse: collapse;
     align-self: right;
-    position:absolute;
+    position: absolute;
     right: 100px
 }
 #myTable td, th {
-    border: 1px solid #4ECDC4;
+    /*border: 2px solid #F7FFF7;*/
     text-align: left;
     padding: 8px;
 }
+#myTable tr:nth-child(odd) {
+    background-color: #8EDFD9;
+}
 #myTable tr:nth-child(even) {
-    background-color: #4ECDC4;
+    background-color: #F7FFF7;
 }
 #mainTitle{
     border-style: solid;
@@ -31,5 +54,13 @@ html{
 	font-size: 100px;	
 	padding: 15px;
 	display: inline-block;
-	border:1px;
+    border:1px;
+    text-shadow:-1px -1px 0 #F7FFF7,
+                1px -1px 0 #F7FFF7,
+                -1px 1px 0 #F7FFF7,
+                1px 1px 0 #F7FFF7,  
+                -2px 0 0 #F7FFF7,
+                2px 0 0 #F7FFF7,
+                0 2px 0 #F7FFF7,
+                0 -2px 0 #F7FFF7;
 }

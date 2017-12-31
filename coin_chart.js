@@ -8,18 +8,17 @@ function drawChart() {
     ['Bitcoin',     11],
     ['Litecoin',      2],
     ['Ripple',  2],
-    ['RaiBlocks', 2],
     ['Ethereum',    7]
     ]);
 
     var options = {
-    backgroundColor: '#F7FFF7',
+    backgroundColor: '#8EDFD9',
     fontName: 'Open Sans',
-    legend: {textStyle:{color: '#1A535C',
-                        fontName: 'Open Sans',
-                        fontSize: 30,
-                        bold: true,
-                        italic: false }}
+    legend: {textStyle: {color: '#1A535C',fontName: 'Open Sans',fontSize: 15,bold: true,italic: false},position:'bottom'},
+    chartArea: {'left':'150','width': '100%', 'height': '90%'},
+    width: 600,
+    height: 500,
+    slices: [{color:'#4ECDC4'},{color:'#1A535C'},{color:'#FF6B6B'},{color:'#FFBA49'}]
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
