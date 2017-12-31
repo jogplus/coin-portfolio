@@ -7,9 +7,32 @@ html{
     background-color: #8EDFD9;
     font-weight: bold;
 }
-.chart {
+.chartWidth {
     width: 750px;
-    text-align: center
+    text-align: center;
+    display:inline-block;
+    padding-bottom: 5px;
+}
+.tableWidth {
+    position: absolute;
+    width: 400px;
+    right: 75px;
+    text-align: center;
+    display:inline-block;
+}
+#tableTitle {
+    font-family: 'Pacifico', sans-serif;
+    color: #FF6B6B;
+    margin: 0;
+    font-size: 40px;
+    text-shadow:-1px -1px 0 #F7FFF7,
+                1px -1px 0 #F7FFF7,
+                -1px 1px 0 #F7FFF7,
+                1px 1px 0 #F7FFF7,  
+                -2px 0 0 #F7FFF7,
+                2px 0 0 #F7FFF7,
+                0 2px 0 #F7FFF7,
+                0 -2px 0 #F7FFF7;
 }
 #piechart {
     align-self: left;
@@ -33,17 +56,17 @@ html{
     border-collapse: collapse;
     align-self: right;
     position: absolute;
-    right: 100px
+    right: 100px;
 }
 #myTable td, th {
     /*border: 2px solid #F7FFF7;*/
     text-align: left;
     padding: 8px;
 }
-#myTable tr:nth-child(odd) {
+#myTable tr:nth-child(even) {
     background-color: #8EDFD9;
 }
-#myTable tr:nth-child(even) {
+#myTable tr:nth-child(odd) {
     background-color: #F7FFF7;
 }
 #mainTitle{
