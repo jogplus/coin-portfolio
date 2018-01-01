@@ -12,12 +12,10 @@ function drawChart() {
     ]);
 
     var options = {
-    backgroundColor: '#8EDFD9',
+    backgroundColor: '#F7FFF7',
     fontName: 'Open Sans',
     legend: {textStyle: {color: '#1A535C',fontName: 'Open Sans',fontSize: 15,bold: true,italic: false},position:'bottom'},
-    chartArea: {'left':'150','width': '100%', 'height': '90%'},
-    width: 600,
-    height: 500,
+    chartArea: {'width': '100%', 'height': '90%'},
     slices: [{color:'#4ECDC4'},{color:'#1A535C'},{color:'#FF6B6B'},{color:'#FFBA49'}]
     };
 

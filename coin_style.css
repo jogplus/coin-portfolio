@@ -8,63 +8,83 @@ html{
     font-weight: bold;
 }
 .chartWidth {
-    width: 750px;
-    text-align: center;
-    display:inline-block;
-    padding-bottom: 5px;
+	background-color: #2A88AD;
+	position: relative;
+	width: 500px;
+	height: 85px;
+	left: 5%;
+	text-align: center;
+	vertical-align:middle;
+	line-height: 85px;
+	display:inline-block;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
 }
 .tableWidth {
+	background-color: #2A88AD;
     position: absolute;
-    width: 400px;
-    right: 75px;
-    text-align: center;
-    display:inline-block;
+	width: 500px;
+	height: 85px;
+	right: 5%;
+	text-align: center;
+	vertical-align:middle;
+	line-height: 85px;
+	display: inline-block;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
 }
 #tableTitle {
     font-family: 'Pacifico', sans-serif;
     color: #FF6B6B;
     margin: 0;
     font-size: 40px;
-    text-shadow:-1px -1px 0 #F7FFF7,
-                1px -1px 0 #F7FFF7,
-                -1px 1px 0 #F7FFF7,
-                1px 1px 0 #F7FFF7,  
-                -2px 0 0 #F7FFF7,
-                2px 0 0 #F7FFF7,
-                0 2px 0 #F7FFF7,
-                0 -2px 0 #F7FFF7;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
 }
 #chartTitle {
     font-family: 'Pacifico', sans-serif;
     color: #FF6B6B;
     margin: 0;
 	font-size: 40px;	
-    text-shadow:-1px -1px 0 #F7FFF7,
-                1px -1px 0 #F7FFF7,
-                -1px 1px 0 #F7FFF7,
-                1px 1px 0 #F7FFF7,  
-                -2px 0 0 #F7FFF7,
-                2px 0 0 #F7FFF7,
-                0 2px 0 #F7FFF7,
-                0 -2px 0 #F7FFF7;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
 }    
 #myTable {
-    font-family: 'Open Sans', sans-serif;
-    border-collapse: collapse;
-    align-self: right;
-    position: absolute;
-    right: 100px;
+	font-family: 'Open Sans', sans-serif;
+	border-collapse:collapse;
+	position: absolute;
+	border: 10px solid #F7FFF7;
+	border-collapse: collapse;
+    border-radius: 30px;
+    border-style: hidden;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-border-radius:10px;
+    -webkit-border-radius:10px;
+	width: 500px;
+	right: 5%;
 }
 #myTable td, th {
-    /*border: 2px solid #F7FFF7;*/
     text-align: left;
-    padding: 8px;
+	padding: 8px;
 }
 #myTable tr:nth-child(even) {
     background-color: #8EDFD9;
 }
 #myTable tr:nth-child(odd) {
     background-color: #F7FFF7;
+}
+#myTable tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+#myTable tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
 }
 #mainTitle{
     border-style: solid;
@@ -75,21 +95,23 @@ html{
 	padding: 15px;
 	display: inline-block;
     border:1px;
-    text-shadow:-1px -1px 0 #F7FFF7,
-                1px -1px 0 #F7FFF7,
-                -1px 1px 0 #F7FFF7,
-                1px 1px 0 #F7FFF7,  
-                -2px 0 0 #F7FFF7,
-                2px 0 0 #F7FFF7,
-                0 2px 0 #F7FFF7,
-                0 -2px 0 #F7FFF7;
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.12);
+}
+.form-style-10 .formTitle{
+	font-family: 'Pacifico', sans-serif;
+	font-size: 40px;
+	color: #FF6B6B;
+	text-align: center;
 }
 .form-style-10{
-	max-width:450px;
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	right: 38%;
+	width: 400px;
 	padding:30px;
-	margin:40px auto;
-	background: #FFF;
-    border-radius: 10px;
+	margin:0px;
+	background: #F7FFF7;
+	border-radius: 10px;
 	-webkit-border-radius:10px;
 	-moz-border-radius: 10px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
@@ -104,41 +126,26 @@ html{
 }
 .form-style-10 h1{
 	background: #2A88AD;
-	padding: 20px 30px 15px 30px;
+	height: 85px;
+	line-height: 85px;
+	vertical-align:middle;
 	margin: -30px -30px 30px -30px;
 	border-radius: 10px 10px 0 0;
 	-webkit-border-radius: 10px 10px 0 0;
 	-moz-border-radius: 10px 10px 0 0;
 	color: #fff;
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
-	font: normal 30px 'Bitter', serif;
-	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
-	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
-	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
-	border: 1px solid #257C9E;
 }
 .form-style-10 h1 > span{
 	display: block;
 	margin-top: 2px;
-	font: 13px Arial, Helvetica, sans-serif;
 }
 .form-style-10 label{
 	display: block;
-	font: 13px Arial, Helvetica, sans-serif;
 	color: #888;
 	margin-bottom: 15px;
 }
-.form-style-10 input[type="text"],
-.form-style-10 input[type="date"],
-.form-style-10 input[type="datetime"],
-.form-style-10 input[type="email"],
-.form-style-10 input[type="number"],
-.form-style-10 input[type="search"],
-.form-style-10 input[type="time"],
-.form-style-10 input[type="url"],
-.form-style-10 input[type="password"],
-.form-style-10 textarea,
-.form-style-10 select {
+.form-style-10 input[type="text"]{
 	display: block;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -153,9 +160,22 @@ html{
 	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
 	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
 }
-
+.form-style-10 input[type="short"] {
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 25%;
+	padding: 8px;
+	border-radius: 6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border: 2px solid #fff;
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
 .form-style-10 .section{
-	font: normal 20px 'Bitter', serif;
 	color: #2A88AD;
 	margin-bottom: 5px;
 }
@@ -181,7 +201,6 @@ html{
 	-moz-border-radius: 5px;
 	color: #fff;
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
-	font: normal 30px 'Bitter', serif;
 	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
 	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
 	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
@@ -194,12 +213,4 @@ html{
 	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
 	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
 	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
-}
-.form-style-10 .privacy-policy{
-	float: right;
-	width: 250px;
-	font: 12px Arial, Helvetica, sans-serif;
-	color: #4D4D4D;
-	margin-top: 10px;
-	text-align: right;
 }

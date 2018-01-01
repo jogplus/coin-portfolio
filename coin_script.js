@@ -10,7 +10,7 @@ $(function(){
                 var coinPrice = row.insertCell(2);
                 var coinChange = row.insertCell(3);
                 coinRank.innerHTML = coinInfo.rank;
-                coinName.innerHTML = coinInfo.name;
+                coinName.innerHTML = coinInfo.name + ' (' + coinInfo.symbol + ')';
                 coinPrice.innerHTML = '$' + coinInfo.price_usd;
                 if (coinInfo.percent_change_24h.substring(0,1) == '-'){
                     coinChange.innerHTML = '-' + coinInfo.percent_change_24h.substring(1, coinInfo.percent_change_24h.length) + '%';
