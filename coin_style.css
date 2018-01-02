@@ -111,6 +111,10 @@ html{
 	-moz-border-radius: 10px;
 	background: #2A88AD;
 }
+#makePortfolio{
+	position: absolute;
+	right: 30px;
+}
 .form-style-10 .formTitle{
 	font-family: 'Pacifico', sans-serif;
 	font-size: 40px;
@@ -212,7 +216,6 @@ html{
 .form-style-10 button[type="submit"]{
 	font-family: 'Open Sans', sans-serif;
 	background: #2A88AD;
-	right: 5px;
 	padding: 8px 20px 8px 20px;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -231,32 +234,4 @@ html{
 	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
 	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
 	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
-}
-.form-style-10 button[type="addNew"]{
-	font-family: 'Open Sans', sans-serif;
-	background: #2A88AD;
-	right: 5px;
-	padding: 8px 20px 8px 20px;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	color: #fff;
-	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
-	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
-	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
-	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
-	border: 1px solid #257C9E;
-	font-size: 15px;
-}
-.form-style-10 button[type="addNew"]:hover{
-	font-family: 'Open Sans', sans-serif;
-	background: #2A6881;
-	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
-	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
-	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
-}
-#addNewCoin {
-	position: absolute;
-	right: 35px;
-
 }
