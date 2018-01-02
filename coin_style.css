@@ -97,6 +97,20 @@ html{
     border:1px;
 	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.12);
 }
+#totalMoney{
+	text-align: center;
+	width: 500px;
+	position: relative;
+	left: 5%;
+	font-family: 'Pacifico', sans-serif;
+	color: #FF6B6B;
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.12);
+	font-size: 50px;	
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	background: #2A88AD;
+}
 .form-style-10 .formTitle{
 	font-family: 'Pacifico', sans-serif;
 	font-size: 40px;
@@ -146,6 +160,7 @@ html{
 	margin-bottom: 15px;
 }
 .form-style-10 input[type="text"]{
+	font-family: 'Open Sans', sans-serif;
 	display: block;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -161,6 +176,8 @@ html{
 	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
 }
 .form-style-10 input[type="short"] {
+	font-family: 'Open Sans', sans-serif;
+
 	display: block;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -192,9 +209,10 @@ html{
 	color: #fff;
 	margin-top: -3px;
 }
-.form-style-10 input[type="button"], 
-.form-style-10 input[type="submit"]{
+.form-style-10 button[type="submit"]{
+	font-family: 'Open Sans', sans-serif;
 	background: #2A88AD;
+	right: 5px;
 	padding: 8px 20px 8px 20px;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -207,10 +225,38 @@ html{
 	border: 1px solid #257C9E;
 	font-size: 15px;
 }
-.form-style-10 input[type="button"]:hover, 
-.form-style-10 input[type="submit"]:hover{
+.form-style-10 button[type="submit"]:hover{
+	font-family: 'Open Sans', sans-serif;
 	background: #2A6881;
 	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
 	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
 	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+.form-style-10 button[type="addNew"]{
+	font-family: 'Open Sans', sans-serif;
+	background: #2A88AD;
+	right: 5px;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+	font-size: 15px;
+}
+.form-style-10 button[type="addNew"]:hover{
+	font-family: 'Open Sans', sans-serif;
+	background: #2A6881;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+#addNewCoin {
+	position: absolute;
+	right: 35px;
+
 }

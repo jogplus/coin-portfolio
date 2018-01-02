@@ -1,9 +1,9 @@
-$(function(){
+$(function getTable(){
         $.get("https://api.coinmarketcap.com/v1/ticker/", function(data){
             var table = document.getElementById("myTable");
             for (coinIndex = 0; coinIndex < 20; coinIndex++){
                 var coinJSON = JSON.stringify(data[coinIndex])
-                var coinInfo = JSON.parse(coinJSON)
+                var coinInfo = JSON.parse(coinJSON);
                 var row = table.insertRow(table.length);
                 var coinRank = row.insertCell(0);
                 var coinName = row.insertCell(1);

@@ -1,15 +1,14 @@
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
+var tableData = [['Coin', 'Money Invested'],['Bitcoin',11],['Litecoin',2],['Ripple',2],['Ethereum',7]];
+var example = true;
+
 function drawChart() {
 
-    var data = google.visualization.arrayToDataTable([
-    ['Coin', 'Money Invested'],
-    ['Bitcoin',     11],
-    ['Litecoin',      2],
-    ['Ripple',  2],
-    ['Ethereum',    7]
-    ]);
+    var data = google.visualization.arrayToDataTable(
+        tableData
+    );
 
     var options = {
     backgroundColor: '#F7FFF7',
@@ -22,4 +21,7 @@ function drawChart() {
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
     chart.draw(data, options);
+
+    document.getElementById('totalMoney').innerHTML= "Total: $100"
+
 }
