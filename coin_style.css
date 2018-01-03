@@ -121,6 +121,9 @@ html{
 	color: #FF6B6B;
 	text-align: center;
 }
+svg > g > g:last-child { 
+	pointer-events: none 
+}
 .form-style-10{
 	font-family: 'Open Sans', sans-serif;
 	position: absolute;
