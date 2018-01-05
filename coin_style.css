@@ -7,16 +7,25 @@ html{
     background-color: #8EDFD9;
     font-weight: bold;
 }
+.piechartSec {
+	width: 500px;
+	display: inline-block;
+	margin: 10px 1% 0px 1%;
+	vertical-align: top;
+}
+.tableSec{
+	width: 500px;
+	display: inline-block;
+	margin: 10px 1% 20px 1%;
+	vertical-align: top;
+}
 .chartWidth {
 	background-color: #2A88AD;
-	position: relative;
 	width: 500px;
 	height: 85px;
-	left: 5%;
 	text-align: center;
 	vertical-align:middle;
 	line-height: 85px;
-	display:inline-block;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
@@ -25,14 +34,11 @@ html{
 }
 .tableWidth {
 	background-color: #2A88AD;
-    position: absolute;
 	width: 500px;
 	height: 85px;
-	right: 5%;
 	text-align: center;
 	vertical-align:middle;
 	line-height: 85px;
-	display: inline-block;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
@@ -56,7 +62,6 @@ html{
 #myTable {
 	font-family: 'Open Sans', sans-serif;
 	border-collapse:collapse;
-	position: absolute;
 	border: 10px solid #F7FFF7;
 	border-collapse: collapse;
     border-radius: 30px;
@@ -67,7 +72,6 @@ html{
 	-moz-border-radius:10px;
     -webkit-border-radius:10px;
 	width: 500px;
-	right: 5%;
 }
 #myTable td, th {
     text-align: left;
@@ -87,33 +91,31 @@ html{
     border-bottom-right-radius: 10px;
 }
 #mainTitle{
+	display:inline-block;
+	text-align: center;
     border-style: solid;
     font-family: 'Pacifico', sans-serif;
     font-weight: normal;
     color: #FF6B6B;
 	font-size: 100px;	
-	padding: 15px;
-	display: inline-block;
     border:1px;
 	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.12);
 }
 #totalMoney{
 	text-align: center;
+	margin: 20px 0px 10px 0px;
 	width: 500px;
-	position: relative;
-	left: 5%;
 	font-family: 'Pacifico', sans-serif;
 	color: #FF6B6B;
 	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.12);
-	font-size: 50px;	
+	font-size: 40px;	
 	border-radius: 10px;
 	-webkit-border-radius:10px;
 	-moz-border-radius: 10px;
 	background: #2A88AD;
-}
-#makePortfolio{
-	position: absolute;
-	right: 30px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
 }
 .form-style-10 .formTitle{
 	font-family: 'Pacifico', sans-serif;
@@ -125,12 +127,12 @@ svg > g > g:last-child {
 	pointer-events: none 
 }
 .form-style-10{
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px 1% 10px 1%;
 	font-family: 'Open Sans', sans-serif;
-	position: absolute;
-	right: 36%;
-	width: 400px;
+	width: 440px;
 	padding:30px;
-	margin:0px;
 	background: #F7FFF7;
 	border-radius: 10px;
 	-webkit-border-radius:10px;
@@ -184,7 +186,6 @@ svg > g > g:last-child {
 }
 .form-style-10 input[type="short"] {
 	font-family: 'Open Sans', sans-serif;
-
 	display: block;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -206,7 +207,6 @@ svg > g > g:last-child {
 .form-style-10 .section span {
 	background: #2A88AD;
 	padding: 5px 10px 5px 10px;
-	position: absolute;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -237,8 +237,4 @@ svg > g > g:last-child {
 	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
 	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
 	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> e0eafe692986765c75d7e2703942199f7ea784dc

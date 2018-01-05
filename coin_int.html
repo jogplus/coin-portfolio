@@ -6,12 +6,20 @@
 		<script src="https://www.gstatic.com/charts/loader.js"></script>
 		<script src="coin_script.js"></script>
 		<script src="coin_chart.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<center>
 			<title id = "mainTitle">Coin Portfolio</title>
 		</center>
 	</head>
 	<body>
 		<script src="coin_new.js"></script>
+		<div class="piechartSec">
+			<div class="chartWidth">
+				<h1 id = "chartTitle">Example Portfolio</h1>
+			</div>
+			<div id="piechart"style="border: 5px solid #F7FFF7; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;width: 490px; height: 500px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);"></div>
+			<div id="totalMoney"></div>
+		</div>
 		<div class="form-style-10">
 			<h1 class="formTitle">Create Your Portfolio!</h1>
 				<div class="section"><span>1</span>Coin &amp; Amount</div>
@@ -24,14 +32,11 @@
 				<button type="submit" id="removeLastCoin" onclick="removeCoin();">Undo Coin</button>
 			</div>
 		</div>
-		<div class="chartWidth">
-			<h1 id = "chartTitle">Example Portfolio</h1>
-		</div>		
-		<div class="tableWidth">
-			<h1 id = "tableTitle">Current Coin Rankings</h1>
-		</div>
-		<table id= "myTable"></table>
-		<div id="piechart" style="position: relative; left: 5%; border: 5px solid #F7FFF7; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;width: 490px; height: 500px;box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);"></div>
-		<br><div id="totalMoney"></div>
+		<div class="tableSec">
+			<div class="tableWidth">
+				<h1 id = "tableTitle">Current Coin Rankings</h1>
+			</div>
+			<table id="myTable"></table>
+		<div>
 	</body>		
 </html>
